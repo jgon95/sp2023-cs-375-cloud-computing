@@ -6,10 +6,10 @@
             "Effect": "Allow",
             "Principal": "*",
             "Action": "s3:*",
-            "Resource": "arn:aws:s3:::sample-bucket-dn/*",
+            "Resource": "arn:aws:s3:::csc375-jg1",
             "Condition": {
                 "IpAddress": {
-                    "aws:SourceIp": "68.230.140.43/32"
+                    "aws:SourceIp": "192.152.243.162/32"
                 }
             }
         },
@@ -18,7 +18,7 @@
             "Effect": "Allow",
             "Principal": "*",
             "Action": "s3:*",
-            "Resource": "arn:aws:s3:::sample-bucket-dn/*",
+            "Resource": "arn:aws:s3:::csc375-jg1",
             "Condition": {
                 "ForAnyValue:StringEquals": {
                     "aws:Referer": "1234"
