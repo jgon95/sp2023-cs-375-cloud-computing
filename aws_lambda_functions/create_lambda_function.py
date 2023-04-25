@@ -5,7 +5,7 @@ import boto3
 def lambda_handler(event,context):
     dynamodb = boto3.resource('dynamodb')
     #table name
-    table = dynamodb.Table('sample')
+    table = dynamodb.Table('users')
     #inserting values into table
     response = table.put_item(
        Item={
